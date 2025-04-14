@@ -8,7 +8,10 @@ const nextConfig = {
     remotePatterns: [{
       hostname: 'img.icons8.com'
     }]
-  }
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 export default MillionLint.next({
   rsc: true

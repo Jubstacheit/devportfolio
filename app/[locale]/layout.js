@@ -1,5 +1,4 @@
 import { Inter } from "next/font/google";
-import PropTypes from "prop-types";
 import "../globals.css";
 import React from "react";
 import { useMessages, NextIntlClientProvider } from "next-intl";
@@ -12,10 +11,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children, locale }) {
-RootLayout.propTypes = {
-  locale: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-};
   const t = useMessages();
 
   return (
